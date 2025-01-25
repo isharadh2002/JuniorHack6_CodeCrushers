@@ -1,6 +1,6 @@
 package com.codecrushers.Print;
 
-public class StudentAlloCationMenu {
+public class StudentAlloCationMenu implements Menu {
 
     public void printMenu(){
         System.out.println("Student Allocation Management.../n/n");

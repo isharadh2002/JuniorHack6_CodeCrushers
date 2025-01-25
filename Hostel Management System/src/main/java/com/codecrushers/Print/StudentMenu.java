@@ -1,6 +1,6 @@
 package com.codecrushers.Print;
 
-public class StudentMenu {
+public class StudentMenu implements Menu {
 
 
 

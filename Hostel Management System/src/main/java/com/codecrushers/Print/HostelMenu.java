@@ -1,6 +1,6 @@
 package com.codecrushers.Print;
 
-public class HostelMenu {
+public class HostelMenu implements Menu {
 
     public void printMenu(){
 
