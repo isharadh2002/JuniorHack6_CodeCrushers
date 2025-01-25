@@ -11,7 +11,7 @@ public class StudentOPR {
 
     //Add Student
     public void addStudent(String student_id, String name, int age, String department) {
-        String query = "INSERT INTO student (student_id, name, age, department) VALUES (?, ?, ?)";
+        String query = "INSERT INTO students (student_id, name, age, department) VALUES (?, ?, ?, ?)";
         try (Connection conn = DatabaseIntegration.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)){
             stmt.setString(1, student_id);
@@ -27,7 +27,7 @@ public class StudentOPR {
 
     //Remove Student
     public void deleteStudent(String student_id) {
-        String query = "DELETE FROM student WHERE student_id = ?";
+        String query = "DELETE FROM students WHERE student_id = ?";
         try (Connection conn = DatabaseIntegration.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
             stmt.setInt(1, Integer.parseInt(student_id));
@@ -40,7 +40,7 @@ public class StudentOPR {
 
     //Update Student
     public void updateStudent(String student_id, String name, int age, String department) {
-        String query = "UPDATE users SET name = ?, age = ?, department = ? WHERE student_id = ?";
+        String query = "UPDATE students SET name = ?, age = ?, department = ? WHERE student_id = ?";
         try (Connection conn = DatabaseIntegration.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
             stmt.setString(1, name);
@@ -54,8 +54,8 @@ public class StudentOPR {
     }
 
     //View Student Details
-    public void readStudent() {
-        String query = "SELECT * FROM student";
+    public void viewStudent() {
+        String query = "SELECT * FROM students";
         try (Connection conn = DatabaseIntegration.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query);
              ResultSet rs = stmt.executeQuery()) {
