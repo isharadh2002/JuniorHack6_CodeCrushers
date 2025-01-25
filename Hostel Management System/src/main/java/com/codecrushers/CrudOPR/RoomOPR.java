@@ -42,7 +42,7 @@ public class RoomOPR {
 
     //Update Room
     public void updateRoom(String room_id, String hostel_id, int room_number,  int capacity, int available_capacity) {
-        String query = "UPDATE students SET hostel_id = ?, room_number = ?, capacity = ?, available_capacity = ? WHERE room_id = ?";
+        String query = "UPDATE rooms SET hostel_id = ?, room_number = ?, capacity = ?, available_capacity = ? WHERE room_id = ?";
         try (Connection conn = DatabaseIntegration.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
             stmt.setString(2, hostel_id);
