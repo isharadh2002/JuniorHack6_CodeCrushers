@@ -6,11 +6,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseIntegration {
-    String host = "jdbc:mysql://localhost:3306/hostel_management_system";
-    String username = "root";
-    String password = "";
+    static String host = "jdbc:mysql://localhost:3306/hostel_management_system";
+    static String username = "root";
+    static String password = "";
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         try{
             Connection connection = DriverManager.getConnection(host, username, password);
             System.out.println("Connected to database");
