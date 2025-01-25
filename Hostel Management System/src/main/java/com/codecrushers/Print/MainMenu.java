@@ -33,6 +33,9 @@ public class MainMenu {
         else if(choice == 3){
             menu = new StudentAlloCationMenu();
         }
+        else if(choice == 0){
+            return;
+        }
         else{
             return;
         }
