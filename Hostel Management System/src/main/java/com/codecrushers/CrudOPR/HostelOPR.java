@@ -66,4 +66,26 @@ public class HostelOPR {
         }
 
     }
+
+    public void viewHostelDetails(Connection connection){
+        System.out.println("Enter hostel ID: ");
+        String hostelID = scanner.nextLine();
+        String query = "SELECT * FROM `hostels` WHERE `hostel_id` = ?";
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, hostelID);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                System.out.println("Hostel ID: " + resultSet.getString("hostel_id"));
+                System.out.println("Hostel Name: " + resultSet.getString("hostel_name"));
+                System.out.println("Number of Rooms: " + resultSet.getInt("number_of_rooms"));
+                resultSet.close();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    
 }
