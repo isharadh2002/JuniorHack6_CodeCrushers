@@ -2,52 +2,52 @@ package com.codecrushers.DTO;
 
 public class Students {
 
-    private String studentId;
-    private String studentName;
-    private int studentAge;
-    private String studentDept;
+    private String student_id;
+    private String name;
+    private int age;
+    private String department;
 
     public Students(String studentId, String studentName, int studentAge, String studentDept) {
-        this.studentId = studentId;
-        this.studentName = studentName;
-        this.studentAge = studentAge;
-        this.studentDept = studentDept;
+        this.student_id = student_id;
+        this.name = name;
+        this.age = age;
+        this.department = department;
     }
 
     public String getStudentId() {
-        return studentId;
+        return student_id;
     }
 
     public String getStudentName() {
-        return studentName;
+        return name;
     }
 
     public int getStudentAge() {
-        return studentAge;
+        return age;
     }
 
     public String getStudentDept() {
-        return studentDept;
+        return department;
     }
 
     public void setStudentId(String studentId) {
-        this.studentId = studentId;
+        this.student_id = student_id;
     }
 
     public void setStudentName(String studentName) {
-        this.studentName = studentName;
+        this.name = name;
     }
 
     public void setStudentAge(int studentAge) {
-        this.studentAge = studentAge;
+        this.age = age;
     }
 
     public void setStudentDept(String studentDept) {
-        this.studentDept = studentDept;
+        this.department = department;
     }
 
     public String toString() {
-        return "ID: " + studentId + ", Name: " + studentName + ", Age: " + studentAge + ", Department: " + studentDept;
+        return "ID: " + student_id + ", Name: " + name + ", Age: " + age + ", Department: " + department;
     }
 
 
