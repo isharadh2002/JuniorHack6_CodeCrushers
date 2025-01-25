@@ -38,7 +38,7 @@ public class UpdateStudent extends StudentMenu {
 
         System.out.println("Successfully update the record of the student Id: "+stuId);
     }
-    
+
 
 
 
