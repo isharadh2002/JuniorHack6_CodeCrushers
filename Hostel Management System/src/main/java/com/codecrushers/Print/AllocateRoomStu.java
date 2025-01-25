@@ -28,8 +28,22 @@ public class AllocateRoomStu  {
         System.out.println("Choose a room to allocate (room Id): ");
         String selectedRoomId=scanner.next();
         //Todo:execute the Query for getting result
-        System.out.println("Successfully updated the record of the room, Id");
+        System.out.println("Successfully updated the record of the room, Id: "+selectedRoomId);
+        System.out.println("SuccessFully allocate the room "+selectedRoomId+" to the student "+stuId);
 
 
+    }
+    public void allocateView(int alloId,String stuId,String roomId,String alloDate ) {
+        System.out.print("ID: " + alloId + ", ");
+        System.out.print("Student ID: " + stuId + ", ");
+        System.out.print("Room ID: " + roomId + ", ");
+        System.out.print("Allocation Date: " + alloDate);
+        System.out.println("/n/n");
+    }
+    public void studentAlreadyAllocatedMsg(){
+        System.out.println("Allocation Declines! The student already has an allocation");
+    }
+    public void notSpace(){
+        System.out.println("Allocation declines! There is no any enough space to do the allocation");
     }
 }
