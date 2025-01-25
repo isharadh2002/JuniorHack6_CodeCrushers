@@ -1,6 +1,6 @@
 package com.codecrushers.Print;
 
-public class AddStudent extends StudentMenu{
+public class AddStudent{
 
     public void addName(){
         System.out.println("Add a student.../n/n ");
