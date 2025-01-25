@@ -1,26 +1,27 @@
 package com.codecrushers.DTO;
 
 public class Rooms {
-    private int roomId;
-    private int roomNo;
-    private int hostelId;
+
+    private int room_id;
+    private int room_number;
+    private int hostel_id;
 
     public int getRoomId() {
-        return roomId;
+        return room_id;
     }
     public void setRoomId(int roomId) {
-        this.roomId = roomId;
+        this.room_id = room_id;
     }
     public int getRoomNo() {
-        return roomNo;
+        return room_number;
     }
     public void setRoomNo(int roomNo) {
-        this.roomNo = roomNo;
+        this.room_number = room_number;
     }
     public int getHostelId() {
-        return hostelId;
+        return hostel_id;
     }
     public void setHostelId(int hostelId) {
-        this.hostelId = hostelId;
+        this.hostel_id = hostel_id;
     }
 }
