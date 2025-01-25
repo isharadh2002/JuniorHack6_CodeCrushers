@@ -2,31 +2,31 @@ package com.codecrushers.DTO;
 
 public class Allocations {
 
-    private int id;
-    private String roomNo;
-    private int hostelId;
-    private int studentId;
+    private int allocation_id;
+    private String room_id;
+    private int hostel_id;
+    private int student_id;
 
-    public Allocations(int id, String roomNo, int hostelId, int studentId) {
-        this.id = id;
-        this.roomNo = roomNo;
-        this.hostelId = hostelId;
-        this.studentId = studentId;
+    public Allocations(int allocation_id, String room_id, int hostel_id, int student_id) {
+        this.allocation_id = allocation_id;
+        this.room_id = room_id;
+        this.hostel_id = hostel_id;
+        this.student_id = student_id;
     }
 
     public int getId() {
-        return id;
+        return allocation_id;
     }
 
     public String getRoomNo() {
-        return roomNo;
+        return room_id;
     }
 
     public int getHostelId() {
-        return hostelId;
+        return hostel_id;
     }
 
-    public int getStudentId() {
-        return studentId;
+    public int getStudent_id() {
+        return student_id;
     }
 }

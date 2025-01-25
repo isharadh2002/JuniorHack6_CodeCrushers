@@ -2,38 +2,38 @@ package com.codecrushers.DTO;
 
 public class Hostels {
 
-    private int hostelId;
-    private String hostelName;
-    private String hostelAddress;
+    private int hostel_id;
+    private String hostel_name;
+    private int number_of_rooms;
 
     public Hostels(int hostelId, String hostelName, String hostelAddress) {
-        this.hostelId = hostelId;
-        this.hostelName = hostelName;
-        this.hostelAddress = hostelAddress;
+        this.hostel_id = hostel_id;
+        this.hostel_name = hostel_name;
+        this.number_of_rooms = number_of_rooms;
     }
 
     public int getHostelId() {
-        return hostelId;
+        return hostel_id;
     }
 
     public void setHostelId(int hostelId) {
-        this.hostelId = hostelId;
+        this.hostel_id = hostel_id;
     }
 
     public String getHostelName() {
-        return hostelName;
+        return hostel_name;
     }
 
     public void setHostelName(String hostelName) {
-        this.hostelName = hostelName;
+        this.hostel_name = hostel_name;
     }
 
-    public String getHostelAddress() {
-        return hostelAddress;
+    public int getNumber_of_rooms() {
+        return number_of_rooms;
     }
 
     public void setHostelAddress(String hostelAddress){
-        this.hostelAddress = hostelAddress;
+        this.number_of_rooms = number_of_rooms;
     }
 
 
