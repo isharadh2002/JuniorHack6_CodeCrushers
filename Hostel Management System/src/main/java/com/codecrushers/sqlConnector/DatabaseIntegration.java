@@ -13,7 +13,7 @@ public class DatabaseIntegration {
     public static Connection getConnection() {
         try{
             Connection connection = DriverManager.getConnection(host, username, password);
-            System.out.println("Connected to database");
+            //System.out.println("Connected to database");
             return connection;
         }
         catch(SQLException e){
